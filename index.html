@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip calculator app</title>
+
+
+</head>
+<body>
+  <img src="./images/logo.svg" alt="SPLITER LOGO">
+  <main>
+    <form class="up">
+        <div class="billBox">
+          <label for="billTotal" class="textLabels">Bill</label>
+          <input placeholder="0" id="billTotal" type="text" class="largeInput">
+        </div>
+        <div class="tipBox">
+          <p class="textLabels">Select Tip %</p>
+          <div class="tipBox__withoutTitle">
+            <div class="eachTipBox">
+              <input value="5%" id="5%" type="radio" name="tip" class="shortInput">
+              <label for="5%" class="radioLabels">5%</label>
+            </div>
+            <div class="eachTipBox">
+              <input value="10%" id="10%" type="radio" name="tip" class="shortInput">
+              <label for="10%" class="radioLabels">10%</label>
+            </div>
+            <div class="eachTipBox">
+              <input value="15%" id="15%" type="radio" name="tip" class="shortInput">
+              <label for="15%" class="radioLabels">15%</label>
+            </div>
+            <div class="eachTipBox">
+              <input value="25%" id="25%" type="radio" name="tip" class="shortInput">
+              <label for="25%" class="radioLabels">25%</label>
+            </div>
+            <div class="eachTipBox">
+              <input value="50%" id="50%" type="radio" name="tip" class="shortInput">
+              <label for="50%" class="radioLabels">50%</label>
+            </div>
+            <div class="eachTipBox">
+              <input id='customTip' type="text" class="shortInput customTipInput" placeholder="Custom">
+            </div>
+          </div>
+        </div>
+          <div class="peopleBox">
+            <label for="peopleNum" class="textLabels">Number of People</label>
+            <input placeholder="0" id="peopleNum" type="text" class="largeInput">
+          </div>
+    </form>
+    <aside class="down">
+      <div class="down__texts">
+        <div class="down__tipTotal">
+          <div class="down__tipTotal--left">
+            <p class="tipTotal__title">Tip Amount</p>
+            <p class="tipTotal__subtitle">/ person</p>
+          </div>
+          <p class="price">$0.00</p>
+        </div>
+        <div class="down__Total">
+          <div class="down__Total--left">
+            <p class="tipTotal__title">Total</p>
+            <p class="tipTotal__subtitle">/ person</p>
+          </div>
+          <p class="price">$0.00</p>
+        </div>
+      </div>
+      <button class="resetBtn">RESET</button>
+    </aside>
+  </main>
+
+</body>
+</html>
