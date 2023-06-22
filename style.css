@@ -8,11 +8,13 @@
     --light-grayish-cyan:hsl(185,41%,84%);
     --very-light-grayish-cyan:hsl(189,41%,97%);
     --white:hsl(0,0%,100%);
+    --error: hsl(0, 100%, 67%);
+    --error2:#b58271;
 
 
     --xs:12rem;
     --lg:24rem;
-    --xl:32rem;
+    --xl:34rem;
     --md:22rem;
     --sm:16rem;
 
@@ -43,9 +45,9 @@ main{
     align-items: center;
     place-self: start center;
     
-    height: 100%;
+    height: fit-content;
     width: 100%;
-    max-width: 800rem;
+    max-width: 600rem;
     padding: 28rem;
     
     background-color: var(--white);
@@ -196,6 +198,13 @@ main{
     height: 50rem;
     border: none;
     border-radius: 6rem;
+    transition: transform 0.3s;
+    transform: scale(1);
+}
+.resetBtn:hover{
+    transform: scale(1.02);
+    background-color: var(--light-grayish-cyan);
+    cursor: pointer;
 }
 .downTexts{
     display: flex;
@@ -220,4 +229,52 @@ main{
     color: var(--strong-cyan);
     font-size: var(--xl);
     line-height: 48rem;
+}
+.inputError{
+    outline: 2px solid var(--error);
+}
+.peopleError{
+    color: var(--error);
+}
+.titles{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 6rem;
+}
+.mainTitles{
+    margin-bottom: 12rem;
+}
+.tipBox, .billBox, .peopleBox{
+    margin-bottom: 20rem;
+}
+.inactive{
+    display: none;
+}
+@media (min-width:1000px){
+    :root{
+        --xl:44rem;
+    }
+    body{
+        grid-template-rows: 25% 75%;
+    }
+    main{
+        flex-direction: row;
+        height: 500px;
+        border-radius: 28rem;
+        max-width: 1000rem;
+        padding: 40rem;
+    }
+    .logo{
+        margin-top: 60rem;
+    }
+    .up{
+        margin-bottom: 0;
+        margin-right: 60rem;
+        height: 100%;
+        justify-content: space-around;
+    }
+    .down{
+        height: 100%;
+        padding: 40rem;
+    }
 }

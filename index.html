@@ -12,34 +12,34 @@
 
 </head>
 <body>
-  <img src="./images/logo.svg" alt="SPLITER LOGO">
+  <img src="./images/logo.svg" alt="SPLITER LOGO" class="logo">
   <main>
     <form class="up">
         <div class="billBox">
-          <label for="billTotal" class="textLabels">Bill</label>
-          <input placeholder="0" id="billTotal" type="text" class="largeInput">
+          <label for="billTotal" class="textLabels mainTitles">Bill</label>
+          <input placeholder="0" id="billTotal" type="text" class="largeInput billInput">
         </div>
         <div class="tipBox">
-          <p class="textLabels">Select Tip %</p>
+          <p class="textLabels mainTitles">Select Tip %</p>
           <div class="tipBox__withoutTitle">
             <div class="eachTipBox">
-              <input value="5%" id="5%" type="radio" name="tip" class="shortInput">
+              <input value="5" id="5%" type="radio" name="tip" class="shortInput percentages">
               <label for="5%" class="radioLabels">5%</label>
             </div>
             <div class="eachTipBox">
-              <input value="10%" id="10%" type="radio" name="tip" class="shortInput">
+              <input value="10" id="10%" type="radio" name="tip" class="shortInput percentages">
               <label for="10%" class="radioLabels">10%</label>
             </div>
             <div class="eachTipBox">
-              <input value="15%" id="15%" type="radio" name="tip" class="shortInput">
+              <input value="15" id="15%" type="radio" name="tip" class="shortInput percentages">
               <label for="15%" class="radioLabels">15%</label>
             </div>
             <div class="eachTipBox">
-              <input value="25%" id="25%" type="radio" name="tip" class="shortInput">
+              <input value="25" id="25%" type="radio" name="tip" class="shortInput percentages">
               <label for="25%" class="radioLabels">25%</label>
             </div>
             <div class="eachTipBox">
-              <input value="50%" id="50%" type="radio" name="tip" class="shortInput">
+              <input value="50" id="50%" type="radio" name="tip" class="shortInput percentages">
               <label for="50%" class="radioLabels">50%</label>
             </div>
             <div class="eachTipBox">
@@ -48,7 +48,10 @@
           </div>
         </div>
           <div class="peopleBox">
-            <label for="peopleNum" class="textLabels">Number of People</label>
+            <div class="titles">
+              <label for="peopleNum" class="textLabels mainTitles">Number of People</label>
+              <span class="peopleError textLabels inactive">Can't be zero</span>
+            </div>
             <input placeholder="0" id="peopleNum" type="text" class="largeInput">
           </div>
     </form>
@@ -59,19 +62,19 @@
             <p class="tipTotal__title">Tip Amount</p>
             <p class="tipTotal__subtitle">/ person</p>
           </div>
-          <p class="price">$0.00</p>
+          <p class="price priceTip">$0.00</p>
         </div>
         <div class="down__Total">
           <div class="down__Total--left">
             <p class="tipTotal__title">Total</p>
             <p class="tipTotal__subtitle">/ person</p>
           </div>
-          <p class="price">$0.00</p>
+          <p class="price priceTotal">$0.00</p>
         </div>
       </div>
       <button class="resetBtn">RESET</button>
     </aside>
   </main>
-
+  <script src="./index.js"></script>
 </body>
 </html>
