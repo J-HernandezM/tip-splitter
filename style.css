@@ -12,13 +12,13 @@
     --error2:#b58271;
 
 
-    --xs:12rem;
-    --lg:24rem;
-    --xl:34rem;
-    --md:22rem;
-    --sm:16rem;
+    --xs:12px;
+    --lg:24px;
+    --xl:34px;
+    --md:22px;
+    --sm:16px;
 
-    font-size: 6.25%;
+    /* font-size: 6.25%; */
 }
 *{
     margin: 0;
@@ -47,11 +47,11 @@ main{
     
     height: fit-content;
     width: 100%;
-    max-width: 600rem;
-    padding: 28rem;
+    max-width: 600px;
+    padding: 28px;
     
     background-color: var(--white);
-    border-radius: 28rem 28rem 0 0 ;
+    border-radius: 28px 28px 0 0 ;
 }
 .up{
     display: flex;
@@ -59,7 +59,7 @@ main{
     align-items: center;
     
     width: 100%;
-    margin-bottom: 28rem;
+    margin-bottom: 28px;
 }
 .down{
     display: flex;
@@ -67,10 +67,10 @@ main{
     justify-content: space-between;
 
     background-color: var(--very-dark-cyan);
-    border-radius: 16rem;
-    padding: 32rem 24rem 24rem;
+    border-radius: 16px;
+    padding: 32px 24px 24px;
     width: 100%;
-    height: 300rem;
+    height: 300px;
 }
 
 .billBox, .peopleBox{
@@ -94,8 +94,8 @@ main{
     display: inline-block;
 
     width: 45%;
-    height: 50rem;
-    margin: 6rem;
+    height: 50px;
+    margin: 6px;
     
 }
 .radioLabels{
@@ -105,9 +105,9 @@ main{
     height: 100%;
 
     background-color: var(--very-dark-cyan);
-    line-height: 50rem;
+    line-height: 50px;
     text-align: center;
-    border-radius: 6rem;
+    border-radius: 6px;
     color: var(--very-light-grayish-cyan);
     font-size: var(--md);
 }
@@ -128,10 +128,10 @@ main{
     opacity: 1;
     width: 100%;
     height: 100%;
-    padding-right: 20rem;
+    padding-right: 20px;
 
     border: none;
-    border-radius: 6rem;
+    border-radius: 6px;
     background-color: var(--very-light-grayish-cyan);
 
     color: var(--very-dark-cyan);
@@ -162,11 +162,11 @@ main{
 }
 .largeInput{
     width: 100%;
-    height: 50rem;
-    padding: 0 16rem;
+    height: 50px;
+    padding: 0 16px;
     
     border: none;
-    border-radius: 6rem;
+    border-radius: 6px;
     background-color: var(--very-light-grayish-cyan);
 
 
@@ -195,9 +195,9 @@ main{
     font-family:  'Space Mono', monospace;
     font-size: var(--md);
     width: 100%;
-    height: 50rem;
+    height: 50px;
     border: none;
-    border-radius: 6rem;
+    border-radius: 6px;
     transition: transform 0.3s;
     transform: scale(1);
 }
@@ -214,7 +214,7 @@ main{
     justify-content: space-between;
 
 
-    margin-bottom: 24rem;
+    margin-bottom: 24px;
 }
 
 .tipTotal__title{
@@ -228,7 +228,7 @@ main{
 .price{
     color: var(--strong-cyan);
     font-size: var(--xl);
-    line-height: 48rem;
+    line-height: 48px;
 }
 .inputError{
     outline: 2px solid var(--error);
@@ -239,20 +239,20 @@ main{
 .titles{
     display: flex;
     justify-content: space-between;
-    padding-right: 6rem;
+    padding-right: 6px;
 }
 .mainTitles{
-    margin-bottom: 12rem;
+    margin-bottom: 12px;
 }
 .tipBox, .billBox, .peopleBox{
-    margin-bottom: 20rem;
+    margin-bottom: 20px;
 }
 .inactive{
     display: none;
 }
 @media (min-width:1000px){
     :root{
-        --xl:44rem;
+        --xl:44px;
     }
     body{
         grid-template-rows: 25% 75%;
@@ -260,21 +260,21 @@ main{
     main{
         flex-direction: row;
         height: 500px;
-        border-radius: 28rem;
-        max-width: 1000rem;
-        padding: 40rem;
+        border-radius: 28px;
+        max-width: 1000px;
+        padding: 40px;
     }
     .logo{
-        margin-top: 60rem;
+        margin-top: 60px;
     }
     .up{
         margin-bottom: 0;
-        margin-right: 60rem;
+        margin-right: 60px;
         height: 100%;
         justify-content: space-around;
     }
     .down{
         height: 100%;
-        padding: 40rem;
+        padding: 40px;
     }
 }
